@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM tomcat
 MAINTAINER peeyush
 
 RUN rm -rf $CATALINA_HOME/webapps/ROOT
