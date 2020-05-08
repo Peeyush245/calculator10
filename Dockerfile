@@ -1,5 +1,4 @@
 FROM java:8
-WORKDIR /home/peeyush/eclipse-workspace/devops_calculator/
-ADD devops_calculator-0.0.1-SNAPSHOT.jar devops_calculator-0.0.1-SNAPSHOT.jar
-EXPOSE 8080
-CMD java - jar devops_calculator-0.0.1-SNAPSHOT.jar
+MAINTAINER peeyush
+COPY devops_calculator-0.0.1-SNAPSHOT.jar /home/peeyush/eclipse-workspace/devops_calculator/devops_calculator-0.0.1-SNAPSHOT.jar
+CMD ["java","-jar","/home/peeyush/eclipse-workspace/devops_calculator/devops_calculator-0.0.1-SNAPSHOT.jar"]
